@@ -1,0 +1,22 @@
+/* Old version
+#define NETSTACK_CONF_RADIO cc2420_driver
+#define NETSTACK_CONF_FRAMER framer_802154
+#define NETSTACK_CONF_RDC  nullrdc_driver  
+#define NETSTACK_CONF_MAC  csma_driver
+
+#undef TIMESYNCH_CONF_ENABLED
+#define TIMESYNCH_CONF_ENABLED 1
+*/
+
+
+#undef NETSTACK_NETWORK
+#define NETSTACK_NETWORK rime_driver
+#undef NETSTACK_CONF_MAC
+#define NETSTACK_CONF_MAC csma_driver
+#undef NETSTACK_CONF_FRAMER
+#define NETSTACK_CONF_FRAMER framer_802154
+#define NETSTACK_CONF_RADIO cc2420_driver
+#undef NETSTACK_CONF_RADIO
+
+#undef TIMESYNCH_CONF_ENABLED
+#define TIMESYNCH_CONF_ENABLED 1

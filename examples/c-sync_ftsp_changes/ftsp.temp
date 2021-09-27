@@ -1,0 +1,730 @@
+#include "net/c-sync/c-sync.h"
+#include "sys/rtimer.h"
+#include "net/rime/rime.h"
+#include "net/rime/announcement.h"
+#include "net/rime/broadcast.h"
+
+#define DEBUG 1
+#if DEBUG
+#include <stdio.h>
+#include <stdlib.h>
+#define PRINTF(...) printf(__VA_ARGS__)
+#else
+#define PRINTF(...)
+#endif
+
+#define FTSP_MAX_ENTRIES           8      // number of entries in the regression table
+//#define FTSP_ENTRY_SEND_LIMIT      3      // number of entries to send sync messages
+//#define FTSP_IGNORE_ROOT_MSG       4      // after becoming the root ignore other roots messages
+#define FTSP_ENTRY_VALID_LIMIT     4      // number of entries to become synchronized
+#define FTSP_ENTRY_THROWOUT_LIMIT  300    // if time sync error is bigger than this clear the table
+//#define FTSP_ROOT_TIMEOUT          3      // time to declare itself the root if no msg was received
+#define FTSP_ENTRY_EMPTY           0      // Regression table entry is empty
+#define FTSP_ENTRY_FULL            1      // Regression table entry is full
+#define FTSP_ERR                   0      // Synchronization Error state
+#define FTSP_OK                    1      // Synchronization OK state
+//#define FTSP_PROTOCOL_DISPATCH     0x01   // Identifier for FTSP
+//#define FTSP_UNKNOWN_NODE          0xFF   // Default value of a node
+
+
+// /**
+//  *  FTSP beacon / message format
+//  */
+// typedef struct ftsp_beacon_t
+// {
+//     uint8_t  dispatch_marker;   /// << protocol marker
+//     uint16_t id;                /// << ID of the sending node
+//     uint16_t root;              /// << ID of the root node
+//     uint16_t seq_number;        /// << ID of the beacon
+//     uint32_t global;            /// << Time of the root estimated by the sender
+//     uint32_t local;             /// << Time of the sender
+// }
+// ftsp_beacon_t;
+
+struct announcement_data {
+  uint16_t id;
+  struct announcement_value a_value;
+};
+
+#define ANNOUNCEMENT_MSG_HEADERLEN 2
+struct announcement_msg {
+  uint16_t num;
+  struct announcement_data data[];
+};
+
+static struct broadcast_conn broadcast;
+
+/**
+ *  Regression table entry structure
+ */
+typedef struct ftsp_table_t {
+    uint8_t state;              /// << Indicates if the entries is used or not
+    uint32_t local;             /// << Recorded local time
+    uint32_t offset;            /// << Difference of received global time and local time
+} ftsp_table_t;
+
+ftsp_table_t table[FTSP_MAX_ENTRIES];
+static uint8_t  table_entries = 0;
+/* Since contiki does not have a hierarchy, temporarily fix node 1 as root */
+static uint8_t  root_id = 70;
+static uint8_t  free_item = 0;
+//static uint16_t seq_num = 0;
+//static uint8_t  heart_beats = 0;
+static uint8_t num_errors = 0;
+static int32_t  offset;
+static float    skew;
+static uint32_t local_time;
+static uint32_t now_my_coarse = 0;
+static uint32_t now_my_fine = 0;
+static uint32_t now_n_coarse = 0;
+static uint32_t now_n_fine = 0;
+static uint32_t now_local_time = 0;
+
+//static void send_beacon(ftsp_beacon_t *);
+static void linear_regression(void);
+static void clear_table();
+static void add_to_regression_table();
+
+// #define TIMESYNCH_CHANNEL  7
+// A message is sent every 30 seconds by the root
+// #define MIN_INTERVAL CLOCK_SECOND * 30
+// #define MAX_INTERVAL CLOCK_SECOND * 60 * 5
+
+
+PROCESS(ftsp_process, "FTSP process");
+AUTOSTART_PROCESSES(&ftsp_process);
+
+/*---------------------------------------------------------------------------*/
+inline char 
+enter_idle(rtimer_t *rt)
+{
+
+    broadcast_close(&broadcast);
+    // announcement_remove_value(&discovery_announcement);
+
+    rtimer_coarse_schedule_ref = rt[RTIMER_0].time_coarse_hw;
+    rtimer_fine_schedule_ref = rt[RTIMER_0].time_fine_hw;
+    NETSTACK_RADIO.off();
+    PRINTF("Inside enter_idle\n");
+    
+    my_state = IDLE;
+
+    process_poll(&ftsp_process);
+    return 0;
+
+}
+
+/*---------------------------------------------------------------------------*/
+inline char 
+enter_discovery(rtimer_t *rt)
+{
+
+    broadcast_close(&broadcast);
+    rtimer_coarse_schedule_ref = rt[RTIMER_0].time_coarse_hw;
+    rtimer_fine_schedule_ref = rt[RTIMER_0].time_fine_hw; 
+    process_poll(&ftsp_process);
+    my_state = DISCOVERY;
+    return 0;
+
+}
+
+
+
+int is_synced(void)
+{
+    if ((table_entries >= FTSP_ENTRY_VALID_LIMIT)) { //|| (root_id == my_addr)
+        return FTSP_OK;
+    }
+    else {
+        return FTSP_ERR;
+    }
+}
+
+
+void 
+get_timing_info (timesync_frame_t *syncframe)
+{
+  
+  rtimer_clock_t ta, tb, ta_compare, tb_compare;
+
+
+  double my_clock_rate;
+  
+
+  
+  do
+  {
+    while(clock_state || clock_priority);
+
+    clock_state = CLOCK_OCCUPIED;
+    my_clock_rate = clock_get_rate();
+
+    ta_compare = TACCR0 - RTIMER_AB_UPDATE;
+    tb_compare = TBCCR0;
+    TBCCTL3 ^= CCIS0;
+    TACCTL1 ^= CCIS0;
+
+    ta = TACCR1;
+    tb = TBCCR3;
+
+    clock_state = CLOCK_FREE;
+    
+    now_my_coarse = RTIMER_COARSE_NOW();
+    now_my_fine = rtimer_stamps_to_now(ta, tb, ta_compare, tb_compare, my_clock_rate);
+
+    
+  } while(now_my_fine == 0);
+
+  now_local_time = rtimer_lgdate_to_hwdate(&now_my_coarse, &now_my_fine);
+
+  now_n_coarse = syncframe->coarse_now;
+  now_n_fine = rtimer_stamps_to_now(syncframe->ta, syncframe->tb, syncframe->ta_compare, syncframe->tb_compare, syncframe->clock_rate);
+
+  uint16_t delta_transmission = (uint16_t)(TRANSMISSION_DELAY * (1 + skew) / (1 + RTIMER_AVG_RATE()));
+  uint32_t total_offset = syncframe->fine_offset + delta_transmission;  
+
+  rtimer_hwdate_to_lgdate(&now_n_coarse, &now_n_fine, total_offset);
+
+}
+
+
+/*---------------------------------------------------------------------------*/
+void
+received_discovery_announcement(struct announcement *a, const linkaddr_t *from,
+            uint16_t id, struct announcement_value *a_value, timesync_frame_t *syncframe, annstate_t last_event)
+{
+    // ftsp_table_t   
+    if(packetbuf_attr(PACKETBUF_ATTR_RSSI) >= RSSI_THRESHOLD)
+    {
+
+        get_timing_info(syncframe);
+
+
+        // Ignoring this condition with a fixed root
+        // if ((syncMsg->root < root_id) && !(heart_beats < FTSP_IGNORE_ROOT_MSG && root_id == node_id)) 
+        // {
+          // new reference node elected
+          // NS:printf("Node %d , Changing reference node to: %d",node_id, syncMsg->root); 
+          //old_root = root_id;
+          // root_id = syncMsg->root;
+          // seq_num  = syncMsg->seq_number;
+          
+        // } 
+        if (a_value->degree <= seq_num)
+        {
+          return;
+        } 
+
+        seq_num = a_value->degree;
+        
+
+        
+          // Ignoring this condition with a fixed root
+        // if (root_id == my_addr) //((root_id == old_root)  {
+        // {
+        //   heart_beats = 0;
+        // }
+      
+      
+        // add new entry to the regression table
+        add_to_regression_table();
+        linear_regression();
+        seq_num++;
+
+
+
+        PRINTF("\n%u %lu N %u fd %ld" , linkaddr_node_addr.u16, now_my_fine, from->u16, rtimer_diff(now_my_fine, now_n_fine));
+
+        rt[RTIMER_0].state = RTIMER_SINGLEPASS;
+        if ((my_addr == root_id) || (is_synced() == FTSP_ERR))
+            enter_discovery(rt);
+        else
+            enter_idle(rt);
+
+       
+
+        //rt[RTIMER_0].state = RTIMER_INACTIVE;
+         // announcement_set_instr(a, DISCOVERY); 
+         // announcement_set_date_coarse(a, now_my_coarse);
+         // announcement_set_date_fine(a, now_my_fine);
+         // announcement_set_degree(a, seq_num);
+         // announcement_set_cons_rate(a, TRUE);
+         // announcement_bump(a);
+
+            
+        // root increases sequence number
+        // seq_num++;
+    }
+
+
+}
+
+
+static void linear_regression()
+{
+    // NS:printf("linear_regression\n");
+    int32_t local_sum = 0, offset_sum = 0,
+            local_average = 0, offset_average = 0;
+    uint8_t i = 0;
+    float new_skew = skew;
+
+    int32_t new_local_average = 0, new_offset_average = 0;
+
+
+    if (table_entries == 0) 
+    {
+        PRINTF("Returning because table_entries is zero\n");
+        return;
+    }
+
+    /*
+        We use a rough approximation first to avoid time overflow errors. The idea
+        is that all times in the table should be relatively close to each other.
+    */
+
+    new_local_average = table[i].local;
+    new_offset_average = table[i].offset;
+
+    // NS:printf("The last non-null offset is %d\n", new_offset_average);
+
+    for (i = 0; i < FTSP_MAX_ENTRIES; i++)
+    {
+        if (table[i].state == FTSP_ENTRY_FULL)
+        {    
+            local_sum += (table[i].local - new_local_average) / table_entries;
+            local_average += (table[i].local - new_local_average) % table_entries;
+            offset_sum += (table[i].offset - new_offset_average) /  table_entries;
+            offset_average += (table[i].offset - new_offset_average) % table_entries;
+        }
+    }
+
+    new_local_average += local_sum + local_average / table_entries;
+    new_offset_average += offset_sum + offset_average / table_entries;
+
+    // NS:printf("Updated offset after calculation = %d\n", new_offset_average);
+
+
+    local_sum = offset_sum = 0;
+    for(i = 0; i < FTSP_MAX_ENTRIES; ++i)
+    {
+       if( table[i].state == FTSP_ENTRY_FULL ) 
+       {
+                int32_t a = table[i].local - new_local_average;
+                int32_t b = table[i].offset - new_offset_average;
+
+                local_sum += (int32_t)a * a;
+                offset_sum += (int32_t)a * b;
+       }
+    }
+
+    if( local_sum != 0 )
+        new_skew = (float)offset_sum / (float)local_sum;
+
+    // NS:printf("New skew calculated is %d\n", new_skew);
+
+    skew = new_skew;
+    rtimer_set_avg_rate(skew);
+    offset = new_offset_average;
+    rtimer_adjust_fine_offset(offset);
+    local_time = new_local_average;
+
+
+    // NS:printf("Rate = %4.4f and offset = %u\n", rate, offset);
+
+    // NS:printf("FTSP linear_regression calculated: num_entries=%u, is_synced=%u\n",
+    // NS:      table_entries, is_synced());
+}
+
+/* This function not only adds an entry but also removes old entries. */
+static void add_to_regression_table()
+{
+    int8_t i = 0;
+    int32_t time_error = 0;
+
+    // clear table if the received entry's been inconsistent for some time
+    // nitin: revisit
+    time_error = rtimer_diff(now_n_fine, now_local_time);
+    // NS:printf("The time error of received message %ld\n", time_error);
+
+    if( (is_synced() == FTSP_OK) &&
+        (time_error > FTSP_ENTRY_THROWOUT_LIMIT || time_error < -FTSP_ENTRY_THROWOUT_LIMIT))
+    {
+        if (++num_errors>3)
+        {
+            clear_table();
+            PRINTF("Clearing the table here\n");
+        }
+        return; // don't incorporate a bad reading
+    }
+
+
+    num_errors = 0;
+
+    for(i = 0; i < FTSP_MAX_ENTRIES; ++i)
+    {
+        // age = msg->local - table[i].local;
+
+        // //logical time error compensation
+        // if( age >= 0x7FFFFFFF )
+        //     table[i].state = FTSP_ENTRY_EMPTY;
+
+        if( table[i].state == FTSP_ENTRY_EMPTY )
+            free_item = i;
+
+
+    }
+
+    // NS:printf("Adding new item to table for node %u\n", msg->id);
+
+    table[free_item].state = FTSP_ENTRY_FULL;
+    table[free_item].local = now_local_time; //msg->local;
+    table[free_item].offset = time_error; //msg->global - msg->local;
+    free_item = (free_item + 1) % FTSP_MAX_ENTRIES;
+    table_entries++;
+
+    // NS:printf("Table entry offset = %d\n", table[free_item].offset);
+
+}
+
+static void clear_table()
+{
+    uint8_t i;
+    for (i = 0; i < FTSP_MAX_ENTRIES; i++) {
+        table[i].state = FTSP_ENTRY_EMPTY;
+    }
+
+    table_entries = 0;
+}
+
+
+// static void send_beacon(ftsp_beacon_t *ftsp_beacon)
+// {
+//     // NS:printf("send_beacon\n");
+//     clock_time_t global_now = timesynch_global_time();
+//     clock_time_t local_now = timesynch_local_time();
+    
+
+//     if (root_id != FTSP_UNKNOWN_NODE) 
+//     {
+//         if (root_id != node_id && ++heart_beats>=FTSP_ROOT_TIMEOUT) 
+//         {
+//             // root timeout
+//             heart_beats = 0;
+//             root_id = node_id;
+//             seq_num++;
+//         }
+//         if ((table_entries < FTSP_ENTRY_SEND_LIMIT) && (root_id != node_id)) 
+//         {
+//             ftsp_beacon->id = 0;
+//             heart_beats++;
+//             return;
+//         }
+//         if( root_id == node_id ) 
+//         {
+//             if( (int32_t)(local_now - local_time) >= 0x20000000 )
+//             {
+//                 local_time = local_now;
+//                 offset = global_now - local_now;        
+//             }
+//             heart_beats++;
+//             seq_num++;
+//         }
+
+//         ftsp_beacon->dispatch_marker = FTSP_PROTOCOL_DISPATCH;
+//         ftsp_beacon->id = node_id;
+//         ftsp_beacon->global = global_now;
+//         ftsp_beacon->root = root_id;
+//         ftsp_beacon->seq_number = seq_num;
+//         ftsp_beacon->local = local_now;
+
+        
+//         // NS:printf("heart_beats = %d and root is %d\n", heart_beats, root_id);
+
+//         // if (root_id == node_id) 
+//         // {
+            
+//         // }
+//     }
+//     // else
+//     // {
+//     //     seq_num = 0;
+//     //     root_id = node_id;
+//     // }
+// }
+
+// void ftsp_print_status()
+// {
+
+//     PRINTF("\n%u ", my_addr);
+
+//     if(my_state == DISCOVERY)
+//     {
+//         PRINTF("-> D");
+//     }
+//     else if(my_state == IDLE)
+//     {
+//         PRINTF("-> I");
+//         powertrace_print("");
+//         PRINTF("\n");
+//     }
+// }
+
+/*---------------------------------------------------------------------------*/
+void
+send_ftsp_adv(void *ptr)
+{
+  struct announcement_msg *adata;
+  timesync_frame_t *syncframe;
+  struct announcement *a;
+
+  PRINTF("Inside send adv\n");
+
+  packetbuf_clear();
+  adata = packetbuf_dataptr();
+  adata->num = 0;
+  for(a = announcement_list(); a != NULL && a->has_value; a = list_item_next(a)) {
+    if(a->has_value)
+    {
+      adata->data[adata->num].id = a->id;
+      adata->data[adata->num].a_value = a->a_value;
+      adata->num++;
+    }
+  }
+  uint16_t announcement_datalength = ANNOUNCEMENT_MSG_HEADERLEN +
+          sizeof(struct announcement_data) * adata->num;
+          
+  syncframe = packetbuf_dataptr() + announcement_datalength;
+
+  rtimer_sync_send(syncframe);
+
+  packetbuf_set_datalen(announcement_datalength + sizeof(timesync_frame_t));
+
+
+
+  if(adata->num > 0) {
+
+    PRINTF("\n%u: sending neighbor advertisement with: instr %u, degree %u, date_coarse %lu, date_fine %lu",
+     linkaddr_node_addr.u16, adata->data[0].a_value.instr, adata->data[0].a_value.degree, (uint32_t)adata->data[0].a_value.date_coarse, adata->data[0].a_value.date_fine);
+
+    packetbuf_set_attr(PACKETBUF_ATTR_PACKET_TYPE,
+                   PACKETBUF_ATTR_PACKET_TYPE_TIMESTAMP);
+    broadcast_send(&broadcast);
+  }
+}
+/*---------------------------------------------------------------------------*/
+void
+adv_ftsp_packet_received(struct broadcast_conn *ibc, const linkaddr_t *from)
+{
+  struct announcement_msg adata;
+  timesync_frame_t syncframe;
+  struct announcement_data data;
+  uint8_t *ptr;
+  int i;
+
+  ptr = packetbuf_dataptr();
+
+  /* Copy number of announcements */
+  memcpy(&adata, ptr, sizeof(struct announcement_msg));
+
+  uint16_t announcement_datalength = ANNOUNCEMENT_MSG_HEADERLEN + 
+          adata.num * sizeof(struct announcement_data);
+
+  memcpy(&syncframe, ptr + announcement_datalength, sizeof(timesync_frame_t));
+
+  if(announcement_datalength + sizeof(timesync_frame_t) > packetbuf_datalen()) {
+    /* The number of announcements is too large - corrupt packet has
+       been received. */
+    //PRINTF("adata.num way out there: %d\n", adata.num);
+    return;
+  }
+
+  ptr += ANNOUNCEMENT_MSG_HEADERLEN;
+  for(i = 0; i < adata.num; ++i) {
+    /* Copy announcements */
+    memcpy(&data, ptr, sizeof(struct announcement_data));
+    announcement_heard(from, data.id, &(data.a_value), &syncframe, 0);
+    ptr += sizeof(struct announcement_data);
+  }
+}
+/*---------------------------------------------------------------------------*/
+void
+adv_ftsp_packet_sent(struct broadcast_conn *bc, int status, int num_tx)
+{
+
+}
+
+static void
+observer_ba(struct announcement *a)
+{
+  broadcast_announcement_continue();
+}
+
+static CC_CONST_FUNCTION struct broadcast_callbacks broadcast_callbacks =
+  {adv_ftsp_packet_received};
+
+static void ftsp_broadcast_init(interval)
+{
+  broadcast_open(&broadcast, LOGICAL_CHANNEL, &broadcast_callbacks);
+
+  announcement_register_observer_callback(observer_ba);
+  
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+void
+ftsp_reset(void)
+{
+
+    announcement_init();
+    //Place holder states to measure time
+    my_state = DISCOVERY;
+
+    rtimer_coarse_schedule_ref = 0;
+    rtimer_fine_schedule_ref = 0;
+    memset(rt, 0, sizeof(rt));
+
+    clear_table();
+
+    seq_num = 0;
+    my_addr = linkaddr_node_addr.u16;
+
+    PRINTF("MY addr is %d\n", my_addr);
+
+    NETSTACK_RADIO.set_value(RADIO_PARAM_CCA_THRESHOLD, RADIO_CCA_THRESHOLD);
+    NETSTACK_RADIO.on();
+
+
+    announcement_register(&discovery_announcement, 0, received_discovery_announcement);
+    announcement_add_value(&discovery_announcement);
+
+    ftsp_broadcast_init(DISC_MAX_INTERVAL);
+    //broadcast_announcement_init(LOGICAL_CHANNEL, DISC_MIN_INTERVAL, DISC_MIN_INTERVAL, DISC_MAX_INTERVAL);
+    //IDLE_SLOT_INTERVAL, IDLE_SLOT_INTERVAL, CLOCK_SECOND);
+}
+
+
+/*---------------------------------------------------------------------------*/
+PROCESS_THREAD(ftsp_process, ev, data)
+{  
+    
+
+    /* Dummy delay code added for Indriya testbed for allowing print statements*/ 
+    static struct etimer sendtimer;
+    PRINTF("Starting FTSP here\n");
+
+
+
+    PROCESS_EXITHANDLER(broadcast_close(&broadcast));
+    PROCESS_BEGIN();
+
+    // ftsp_reset();
+    broadcast_open(&broadcast, LOGICAL_CHANNEL, &broadcast_callbacks);
+
+    while(1)
+    { 
+
+
+        etimer_set(&sendtimer, 1);
+        PRINTF("Wait for etimer\n");
+        PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&sendtimer));
+        PRINTF("About to send broadcast\n");
+        send_ftsp_adv(NULL);
+
+        PRINTF("Sent broadcast\n");
+
+        
+//         while((my_state == IDLE) && (cons_ctrl_counter < NUM_CONS_CTRL_ITERATIONS))
+//         {
+//          PRINTF("Inside the IDLE while loop\n");
+//             if(cons_ctrl_counter < NUM_CONS_CTRL_ITERATIONS-1)
+//             {
+
+//                 if(rtimer_schedule(RTIMER_0, RTIMER_INTERVAL_REF, 0, IDLE_SLOT_INTERVAL, enter_idle))
+//                 {
+//                     PRINTF("Entered Idle phase\n");
+// #if IDLE_BROADCAST
+//                     NETSTACK_RADIO.on();
+//                     announcement_set_instr(&discovery_announcement, my_state);
+//                     announcement_set_degree(&discovery_announcement, seq_num);
+//                     announcement_set_date_coarse(&discovery_announcement, rt[RTIMER_0].time_coarse_lg); //PRELIMINARY
+//                     announcement_set_date_fine(&discovery_announcement, rt[RTIMER_0].time_fine_lg); //PRELIMINARY
+//                     announcement_set_cons_rate(&discovery_announcement, FTSP_OK);
+//                     announcement_set_ref_addr(&discovery_announcement, root_id);
+//                     announcement_add_value(&discovery_announcement);
+//                     ftsp_broadcast_init(IDLE_MAX_INTERVAL);
+//                     etimer_set(&sendtimer, DISC_MAX_INTERVAL);
+//                      PROCESS_WAIT_UNTIL(etimer_expired(&sendtimer));
+//                      send_ftsp_adv(NULL);
+//                     // broadcast_announcement_init(LOGICAL_CHANNEL, IDLE_MIN_INTERVAL, IDLE_MIN_INTERVAL, IDLE_MAX_INTERVAL);
+// #endif /*IDLE_BROADCASTS*/
+
+//                     PROCESS_YIELD();
+                        
+// #if IDLE_BROADCAST
+//                     broadcast_close(&broadcast);
+//                     announcement_remove_value(&discovery_announcement);
+//                     PRINTF("\n");
+// #endif /*IDLE_BROADCASTS*/
+//                 }
+//             }
+//             else
+//             {
+//                 if(rtimer_schedule(RTIMER_0, RTIMER_INTERVAL_REF, 0, IDLE_SLOT_INTERVAL, enter_discovery))
+//                 {
+//                     PRINTF("Changing to discovery phase soon\n");
+
+// #if IDLE_BROADCAST
+//                     NETSTACK_RADIO.on();
+//                     announcement_set_instr(&discovery_announcement, my_state);
+//                     announcement_set_degree(&discovery_announcement, seq_num);
+//                     announcement_set_date_coarse(&discovery_announcement, rt[RTIMER_0].time_coarse_lg); //PRELIMINARY
+//                     announcement_set_date_fine(&discovery_announcement, rt[RTIMER_0].time_fine_lg); //PRELIMINARY
+//                     announcement_set_cons_rate(&discovery_announcement, FTSP_OK);
+//                     announcement_set_ref_addr(&discovery_announcement, root_id);
+//                     announcement_add_value(&discovery_announcement);
+//                     ftsp_broadcast_init(IDLE_MAX_INTERVAL);
+//                     etimer_set(&sendtimer, DISC_MAX_INTERVAL);
+//                      PROCESS_WAIT_UNTIL(etimer_expired(&sendtimer));
+//                      send_ftsp_adv(NULL);
+//                     // broadcast_announcement_init(LOGICAL_CHANNEL, IDLE_MIN_INTERVAL, IDLE_MIN_INTERVAL, IDLE_MAX_INTERVAL);
+// #endif /*IDLE_BROADCASTS*/
+
+//                     PROCESS_YIELD();
+                        
+// #if IDLE_BROADCAST
+//                     broadcast_close(&broadcast);
+//                     announcement_remove_value(&discovery_announcement);
+//                     PRINTF("\n");
+// #endif /*IDLE_BROADCASTS*/
+//                 }
+                
+//             }
+//             cons_ctrl_counter++;
+//         }
+
+//         while ((my_addr == 70) || ((my_state == DISCOVERY) && (is_synced() != FTSP_OK)))
+//         {
+//          PRINTF("Inside the discovery while loop\n");
+//          if(rtimer_schedule(RTIMER_0, RTIMER_INTERVAL_REF, 0, IDLE_SLOT_INTERVAL, enter_discovery))
+//             {
+
+//              announcement_set_instr(&discovery_announcement, DISCOVERY); 
+//              announcement_set_date_coarse(&discovery_announcement, now_my_coarse);
+//              announcement_set_date_fine(&discovery_announcement, now_my_fine);
+//              announcement_set_degree(&discovery_announcement, seq_num);
+//              announcement_set_ref_addr(&discovery_announcement, root_id);
+//              announcement_set_cons_rate(&discovery_announcement, FTSP_OK);
+//              announcement_add_value(&discovery_announcement);
+//              announcement_bump(&discovery_announcement);
+//          }
+
+//          PROCESS_YIELD();
+//         }
+        PROCESS_END();
+    }
+    
+   return 1; 
+}

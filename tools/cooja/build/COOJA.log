@@ -1,0 +1,876 @@
+[09:28:21 - main] [Cooja.java:3172] [WARN] - JAVA_HOME environment variable not set, Cooja motes may not compile
+[09:28:22 - AWT-EventQueue-0] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux_64.config
+[09:28:22 - AWT-EventQueue-0] [Cooja.java:2886] [INFO] - External tools user settings: /home/nitin.shivaraman/.cooja.user.properties
+[09:28:29 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:28:29 - AWT-EventQueue-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[09:28:40 - AWT-EventQueue-0] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/timesync/sim_comm.sky with /home/nitin.shivaraman/contiki_mod/examples/timesync/sim_comm.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:02 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:29:09 - Thread-1] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621646949705
+[09:29:13 - Thread-1] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621646953419	Duration: 3714 ms	Simulated time 4233524 ms	Ratio 1139.882606354335
+[09:31:37 - Thread-2] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:37 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:38 - Thread-2] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:31:38 - Thread-2] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:31:59 - Thread-3] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621647119708
+[09:32:02 - Thread-3] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621647122046	Duration: 2338 ms	Simulated time 2369838 ms	Ratio 1013.617621899059
+[09:32:03 - Thread-4] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:03 - Thread-4] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:32:15 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:32:29 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:29 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:29 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:29 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:29 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:30 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:30 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:30 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:30 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:30 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:32:32 - Thread-6] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621647152301
+[09:32:45 - Thread-6] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621647165387	Duration: 13086 ms	Simulated time 20510268 ms	Ratio 1567.3443374598808
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:16 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:35:26 - Thread-8] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621647326815
+[09:35:31 - Thread-8] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621647331070	Duration: 4256 ms	Simulated time 26464158 ms	Ratio 6218.082236842105
+[09:36:48 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:36:53 - Thread-11] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621647413432
+[09:36:57 - Thread-11] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621647417896	Duration: 4464 ms	Simulated time 32520874 ms	Ratio 7285.142025089605
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:46 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:38:50 - Thread-13] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621647530250
+[09:38:54 - Thread-13] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621647534035	Duration: 3785 ms	Simulated time 37711821 ms	Ratio 9963.492998678996
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:49:42 - Thread-15] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621648182462
+[09:50:08 - Thread-15] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621648208826	Duration: 26364 ms	Simulated time 82255793 ms	Ratio 3120.0042861477773
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:51 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:52 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:52 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:52 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:52 - Thread-17] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:52:52 - Thread-17] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:52:53 - Thread-18] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621648373763
+[09:53:02 - Thread-18] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621648382955	Duration: 9192 ms	Simulated time 14729302 ms	Ratio 1602.4044821583987
+[09:54:32 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[09:54:48 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123457
+[09:54:49 - Thread-20] [Simulation.java:422] [INFO] - Simulation random seed: 123457
+[09:54:49 - Thread-20] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:54:57 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[09:55:15 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:55:33 - Thread-23] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621648533041
+[09:55:35 - Thread-23] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621648535261	Duration: 2220 ms	Simulated time 1916051 ms	Ratio 863.086036036036
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[09:57:43 - Thread-25] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621648663351
+[09:57:49 - Thread-25] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621648669654	Duration: 6303 ms	Simulated time 11435033 ms	Ratio 1814.2206885610026
+[10:04:06 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[10:04:38 - Thread-28] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621649078411
+[10:05:06 - Thread-28] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621649106991	Duration: 28580 ms	Simulated time 48933699 ms	Ratio 1712.1658152554235
+[10:05:37 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:59 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:59 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:39:59 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:40:01 - Thread-30] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621651201516
+[10:40:03 - Thread-30] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621651203323	Duration: 1807 ms	Simulated time 1331212 ms	Ratio 736.6972883231876
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:21 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:41:24 - Thread-32] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621651284533
+[10:41:25 - Thread-32] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621651285981	Duration: 1448 ms	Simulated time 2235725 ms	Ratio 1544.0089779005525
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:38 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:40 - Thread-34] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621651360640
+[10:42:42 - Thread-34] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621651362341	Duration: 1701 ms	Simulated time 3594339 ms	Ratio 2113.074074074074
+[10:42:56 - Thread-35] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[10:42:56 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:56 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:56 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:56 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:56 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:42:57 - Thread-35] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[10:45:40 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[10:45:51 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:04 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:46:06 - Thread-38] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621651566985
+[10:46:11 - Thread-38] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621651571238	Duration: 4253 ms	Simulated time 5615301 ms	Ratio 1320.3153068422291
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:23 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[10:47:25 - Thread-40] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621651645232
+[10:47:27 - Thread-40] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621651647657	Duration: 2425 ms	Simulated time 8298216 ms	Ratio 3421.9447422680414
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:05:29 - Thread-42] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621652729886
+[11:05:32 - Thread-42] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621652732641	Duration: 2755 ms	Simulated time 11529408 ms	Ratio 4184.903085299456
+[11:11:44 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:11:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:12:06 - Thread-44] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621653126548
+[11:12:09 - Thread-44] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621653129594	Duration: 3046 ms	Simulated time 3608486 ms	Ratio 1184.6638214051216
+[11:47:13 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:47:30 - Thread-46] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621655250204
+[11:47:35 - Thread-46] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621655255051	Duration: 4847 ms	Simulated time 7081182 ms	Ratio 1460.9412007427275
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:45 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:49:47 - Thread-48] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621655387390
+[11:49:51 - Thread-48] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621655391014	Duration: 3624 ms	Simulated time 11913842 ms	Ratio 3287.483995584989
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:51:14 - Thread-50] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621655474792
+[11:51:23 - Thread-50] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621655483950	Duration: 9158 ms	Simulated time 26499219 ms	Ratio 2893.559620004368
+[11:53:22 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:36 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:53:39 - Thread-52] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621655619801
+[11:53:44 - Thread-52] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621655624209	Duration: 4408 ms	Simulated time 6167724 ms	Ratio 1399.2114337568057
+[11:54:33 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:34 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[11:54:35 - Thread-54] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621655675969
+[11:54:39 - Thread-54] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621655679464	Duration: 3496 ms	Simulated time 10538764 ms	Ratio 3014.520594965675
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:20:29 - Thread-56] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621660829886
+[13:20:35 - Thread-56] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621660835367	Duration: 5481 ms	Simulated time 18678856 ms	Ratio 3407.928480204342
+[13:23:24 - Thread-57] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:23:24 - Thread-57] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[13:23:29 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[13:23:37 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:49 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:23:51 - Thread-60] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621661031515
+[13:23:55 - Thread-60] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621661035536	Duration: 4021 ms	Simulated time 5538427 ms	Ratio 1377.3755284755036
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:28:58 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:00 - Thread-62] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[13:29:02 - Thread-63] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621661342629
+[13:29:08 - Thread-63] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621661348397	Duration: 5768 ms	Simulated time 8659099 ms	Ratio 1501.2307558945909
+[13:29:13 - Thread-64] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[13:29:13 - Thread-64] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[13:29:14 - Thread-65] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621661354637
+[13:29:23 - Thread-65] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621661363245	Duration: 8608 ms	Simulated time 8606 ms	Ratio 0.9997676579925651
+[13:29:44 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[13:29:55 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:30:28 - AWT-EventQueue-0] [Cooja.java:4140] [WARN] - Path is not portable: '/home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[13:30:40 - Thread-68] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621661440638
+[13:30:47 - Thread-68] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621661447526	Duration: 6888 ms	Simulated time 14464 ms	Ratio 2.099883855981417
+[14:57:58 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:58:16 - AWT-EventQueue-0] [Cooja.java:4140] [WARN] - Path is not portable: '/home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:22 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/rime/example-broadcast.sky
+[14:58:23 - Thread-70] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621666703947
+[14:58:28 - Thread-70] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621666708026	Duration: 4079 ms	Simulated time 8854 ms	Ratio 2.1706300563863694
+[14:58:47 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:59:08 - AWT-EventQueue-0] [Cooja.java:4140] [WARN] - Path is not portable: '/home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:14 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki/examples/clocksync/BEEM.sky
+[14:59:17 - Thread-72] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621666757396
+[14:59:24 - Thread-72] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621666764147	Duration: 6751 ms	Simulated time 13898 ms	Ratio 2.0586579765960598
+[14:59:38 - Thread-73] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:59:38 - Thread-73] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/timesync/sim_comm.sky with /home/nitin.shivaraman/contiki_mod/examples/timesync/sim_comm.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
+[14:59:46 - Thread-75] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:59:46 - Thread-75] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/timesync/sim_comm.sky with /home/nitin.shivaraman/contiki_mod/examples/timesync/sim_comm.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
+[15:01:01 - Thread-77] [Cooja.java:3625] [WARN] - Loaded simulation may depend on not found  extension: '/home/nitin.shivaraman/contiki_mod/tools/cooja/apps/native_gateway'
+[15:01:01 - Thread-77] [Cooja.java:3625] [WARN] - Loaded simulation may depend on not found  extension: '/home/user/contikiprojects/sics.se/mobility'
+[15:01:01 - Thread-77] [Cooja.java:3625] [WARN] - Loaded simulation may depend on not found  extension: '/home/user/contikiprojects/sics.se/powertracker'
+[15:01:01 - Thread-77] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:01:01 - Thread-77] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/rime/example-collect.sky with /home/nitin.shivaraman/contiki_mod/examples/rime/example-collect.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
+[15:01:01 - Thread-77] [CompileContiki.java:140] [INFO] - > make example-collect.sky TARGET=sky 
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> > make example-collect.sky TARGET=sky 
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> mkdir obj_sky
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >>   CC        ../../platform/sky/./contiki-sky-platform.c
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >>   CC        ../../dev/sht11/sht11.c
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >>   CC        ../../dev/sht11/sht11-sensor.c
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> ../../dev/sht11/sht11-sensor.c: In function ‘configure’:
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> ../../dev/sht11/sht11-sensor.c:91:15: error: ‘RTIMER_CONF_SECOND’ undeclared (first use in this function)
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> ../../dev/sht11/sht11-sensor.c:91:15: note: each undeclared identifier is reported only once for each function it appears in
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> make: *** [obj_sky/sht11-sensor.o] Error 1
+[15:01:01 - Thread-77] [SkyMoteType.java:171] [FATAL] - >> Process returned error code 2
+[15:01:01 - Thread-77] [SkyMoteType.java:174] [FATAL] - Compilation error: Bad return value
+[15:02:46 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:12 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:13 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:03:15 - Thread-80] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621666995191
+[15:03:24 - Thread-80] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667004615	Duration: 9424 ms	Simulated time 14615102 ms	Ratio 1550.8384974533108
+[15:03:59 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:04:17 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:17 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/c-sync.sky
+[15:04:18 - Thread-82] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667058959
+[15:04:24 - Thread-82] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667064095	Duration: 5136 ms	Simulated time 7339330 ms	Ratio 1428.997274143302
+[15:05:26 - Thread-83] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:05:26 - Thread-83] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[15:05:30 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[15:05:41 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:53 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:05:55 - Thread-86] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667155705
+[15:06:00 - Thread-86] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667160106	Duration: 4401 ms	Simulated time 5959575 ms	Ratio 1354.1411042944785
+[15:06:49 - Thread-87] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:06:49 - Thread-87] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[15:06:54 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[15:07:05 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:18 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:21 - Thread-90] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667241441
+[15:07:25 - Thread-90] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667245383	Duration: 3942 ms	Simulated time 3838 ms	Ratio 0.9736174530695079
+[15:07:49 - Thread-91] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:07:49 - Thread-91] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[15:07:50 - Thread-92] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667270964
+[15:07:58 - Thread-92] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667278473	Duration: 7509 ms	Simulated time 5212 ms	Ratio 0.6940079893475366
+[15:10:11 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:10:26 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:27 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:10:30 - Thread-94] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667430188
+[15:10:40 - Thread-94] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667440652	Duration: 10464 ms	Simulated time 7191 ms	Ratio 0.6872133027522935
+[15:16:23 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:35 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:16:39 - Thread-96] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667799872
+[15:16:46 - Thread-96] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667806514	Duration: 6642 ms	Simulated time 6641 ms	Ratio 0.9998494429388738
+[15:18:29 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:18:40 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:41 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/nitin.shivaraman/contiki_mod/examples/c-sync/ftsp.sky
+[15:18:47 - Thread-98] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1621667927331
+[15:18:57 - Thread-98] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1621667937434	Duration: 10103 ms	Simulated time 6464 ms	Ratio 0.6398099574383846
